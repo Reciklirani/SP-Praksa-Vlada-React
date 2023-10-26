@@ -1,0 +1,45 @@
+@import "../vars";
+
+.main3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5%;
+
+  .small {
+    width: 80%;
+    padding: 1%;
+
+    @media only screen and (min-width: 481px) {
+      width: 60%;
+    }
+
+    @media only screen and (min-width: 769px) {
+      width: 30%;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: left;
+      color: var(--color-text);
+
+      @media only screen and (min-width: 481px) {
+        font-size: 24px;
+      }
+    }
+
+    div {
+      margin-top: 5%;
+      width: 15%;
+      height: 2px;
+      background-color: $red;
+    }
+  }
+}

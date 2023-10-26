@@ -1,0 +1,80 @@
+@import "../vars";
+
+.main7 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 5%;
+
+  h3 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    line-height: 34px;
+    width: auto;
+    color: black;
+
+    @media only screen and (min-width: 481px) {
+      width: 50%;
+    }
+  }
+
+  .line {
+    width: 40%;
+    height: 3px;
+    background: $darkgrey;
+    margin: 3%;
+  }
+
+  .brands {
+    display: none;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media only screen and (min-width: 769px) {
+      display: flex;
+    }
+  }
+
+  // swiper
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media only screen and (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    font-family: Inter;
+    background-color: $red;
+    color: white;
+    width: 50%;
+    height: 48px;
+    padding: 0px, 16px, 0px, 16px;
+    border-radius: 4px;
+    margin-top: 5%;
+
+    @media only screen and (min-width: 481px) {
+      width: 30%;
+    }
+  }
+}

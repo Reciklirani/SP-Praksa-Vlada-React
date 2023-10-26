@@ -1,0 +1,66 @@
+@import "../vars";
+
+.main5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: $red;
+  height: auto;
+  color: white;
+  padding: 5%;
+  gap: 20px;
+  background-image: url(../img/stat-background.png);
+  background-size: cover;
+
+  @media only screen and (min-width: 481px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0;
+    height: 18vw;
+  }
+
+  .stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 481px) {
+      width: 25%;
+      border-right: 1px solid $border;
+    }
+
+    h2 {
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 34px;
+
+      @media only screen and (min-width: 769px) {
+        font-size: 46px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 200;
+      line-height: 34px;
+
+      @media only screen and (min-width: 769px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  :last-child {
+    border: none;
+  }
+}

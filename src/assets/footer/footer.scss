@@ -1,0 +1,201 @@
+@import "../vars";
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("../assets/img/footer-background.png");
+  background-size: cover;
+  background-color: $textcolor;
+  color: $main;
+
+  a {
+    color: $main;
+  }
+
+  .foot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    @media only screen and (min-width: 481px) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+
+    .div1 {
+      width: 90%;
+      display: flex;
+      padding: 2%;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (min-width: 481px) {
+        width: 22%;
+        justify-content: flex-end;
+        align-items: stretch;
+      }
+
+      img {
+        width: 86px;
+        height: 85px;
+      }
+    }
+
+    .div2 {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      justify-content: center;
+      align-items: center;
+      padding-left: 2%;
+      margin: 2%;
+
+      @media only screen and (min-width: 481px) {
+        width: 32%;
+        justify-content: flex-start;
+        align-items: stretch;
+        border-left: solid 1px $border;
+      }
+
+      h3 {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        figure {
+          display: flex;
+          gap: 2%;
+          align-items: center;
+        }
+      }
+    }
+
+    .div3 {
+      width: 90%;
+      display: flex;
+      margin: 2%;
+      padding-left: 2%;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (min-width: 481px) {
+        display: none !important;
+      }
+
+      @media only screen and (min-width: 769px) {
+        width: 12%;
+        display: flex !important;
+        border-left: solid 1px $border;
+        justify-content: flex-start;
+        align-items: stretch;
+      }
+
+      ul {
+        width: 100%;
+        list-style: none;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        line-height: 26px;
+
+        li {
+          @media only screen and (min-width: 769px) {
+            text-align: left;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .div4 {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2%;
+      padding-left: 2%;
+      gap: 1em;
+      p {
+        @media only screen and (min-width: 481px) {
+          text-align: left;
+        }
+      }
+
+      @media only screen and (min-width: 481px) {
+        width: 22%;
+        border-left: solid 1px $border;
+        justify-content: flex-start;
+        align-items: stretch;
+      }
+
+      div {
+        display: flex;
+        gap: 1em;
+      }
+    }
+  }
+
+  .div5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.33);
+    background-blend-mode: multiply;
+    color: rgba(255, 255, 255, 0.302);
+
+    @media only screen and (min-width: 769px) {
+      flex-direction: row;
+    }
+
+    p {
+      display: block;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+      color: rgb(255, 255, 255, 0.3);
+
+      @media only screen and (min-width: 769px) {
+        display: inline;
+      }
+    }
+
+    a {
+      display: block;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+      text-align: right;
+      color: rgb(255, 255, 255, 0.5);
+
+      @media only screen and (min-width: 769px) {
+        display: inline;
+      }
+    }
+  }
+}
