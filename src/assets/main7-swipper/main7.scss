@@ -40,7 +40,6 @@
     }
   }
 
-  // swiper
   .swiper {
     width: 100%;
     padding-top: 50px;
@@ -49,18 +48,6 @@
     @media only screen and (min-width: 769px) {
       display: none;
     }
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
   }
 
   button {
@@ -76,5 +63,22 @@
     @media only screen and (min-width: 481px) {
       width: 30%;
     }
+  }
+  .mySwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
   }
 }

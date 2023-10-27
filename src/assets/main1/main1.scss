@@ -7,7 +7,7 @@
   text-align: left;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: var(--color-background);
+  background-color: $main;
 
   .slika {
     width: 100%;
@@ -35,7 +35,7 @@
       line-height: 44px;
       font-family: Roboto;
       font-weight: 700;
-      color: var(--color-474747);
+      color: #474747;
       text-align: left;
 
       @media only screen and (min-width: 769px) {
@@ -48,7 +48,7 @@
       font-size: 20px;
       line-height: 24px;
       font-family: Inter;
-      color: var(--color-text);
+      color: $textcolor;
       text-align: left;
 
       @media only screen and (min-width: 769px) {
@@ -63,7 +63,7 @@
       font-size: 14px;
       line-height: 22px;
       text-align: left;
-      color: var(--color-text);
+      color: $textcolor;
     }
 
     button {
@@ -72,6 +72,7 @@
       width: 80%;
       height: 48px;
       margin-top: 10%;
+      margin-left: 10%;
       padding: 0px, 16px, 0px, 16px;
       border-radius: 4px;
       font-family: Roboto;
@@ -93,6 +94,6 @@
     width: 85%;
     height: 3px;
     margin-top: 5%;
-    background-color: var(--color-darkgrey);
+    background-color: $darkgrey;
   }
 }
